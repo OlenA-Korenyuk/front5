@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="description"
+      content="5 лабораторна робота з дисципліни 'Основи Front-end технологій"
+    />
+    <title>Коренюк О. А. ІК-21</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <body>
+      <div class="container">
+        <form id="registrationForm">
+          <div class="form-group">
+            <label for="fullName">ПІБ (Прізвище І. Б.):</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Петренко П. В."
+            />
+            <span class="error-message" id="fullNameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Телефон:</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="(099)-999-99-99"
+            />
+            <span class="error-message" id="phoneError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="faculty">Факультет:</label>
+            <input type="text" id="faculty" name="faculty" placeholder="ФІОТ" />
+            <span class="error-message" id="facultyError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="birthDate">Дата народження:</label>
+            <input
+              type="text"
+              id="birthDate"
+              name="birthDate"
+              placeholder="01.01.2000"
+            />
+            <span class="error-message" id="birthDateError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Адреса:</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="м. Київ"
+            />
+            <span class="error-message" id="addressError"></span>
+          </div>
+
+          <button type="submit">Відправити</button>
+        </form>
+      </div>
+
+      <div id="resultModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Введена інформація:</h2>
+          <div id="resultContent"></div>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table id="interactiveTable"></table>
+
+        <div id="colorPalette" class="color-palette">
+          <div class="color-option" style="background-color: #ff0000"></div>
+          <div class="color-option" style="background-color: #00ff00"></div>
+          <div class="color-option" style="background-color: #0000ff"></div>
+          <div class="color-option" style="background-color: #ffff00"></div>
+          <div class="color-option" style="background-color: #ff00ff"></div>
+          <div class="color-option" style="background-color: #00ffff"></div>
+          <div class="color-option" style="background-color: #ffffff"></div>
+          <div class="color-option" style="background-color: #000000"></div>
+        </div>
+      </div>
+    </body>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
